@@ -48,9 +48,6 @@ class URI_finder:
             return None
         
     def find_URI(self, title: str, artist: str):
-        title = "Shape of You"
-        artist = "Ed Sheeran"
-
         token = self.get_access_token(self.CLIENT_ID, self.CLIENT_SECRET)
         uri = self.search_track_uri(title, artist, token)
 
